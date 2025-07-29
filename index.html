@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Endereço Fácil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meu Endereço Fácil</h1>
+        <p>Preencha automaticamente seu endereço com o CEP:</p>
+
+        <div class="form-group">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="Digite seu CEP (somente números)" maxlength="8">
+            <button id="buscarCep">Buscar Endereço</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            <p id="mensagemErro" class="erro"></p>
+            <div class="campos-endereco">
+                <label for="logradouro">Rua:</label>
+                <input type="text" id="logradouro" readonly>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" readonly>
+
+                <label for="localidade">Cidade:</label>
+                <input type="text" id="localidade" readonly>
+
+                <label for="uf">Estado:</label>
+                <input type="text" id="uf" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
